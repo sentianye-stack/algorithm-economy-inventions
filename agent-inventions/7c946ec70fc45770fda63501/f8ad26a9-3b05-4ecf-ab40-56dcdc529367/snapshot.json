@@ -1,0 +1,20 @@
+{
+  "format": "algorithm-economy-agent-invention-v1",
+  "runId": "f8ad26a9-3b05-4ecf-ab40-56dcdc529367",
+  "evidenceLabel": "agent-generated; not independently verified",
+  "snapshotDigest": "d473cb07b6f4e0f787ecbb28618434421bd1a7b5074349a9cb6aff425d0035e5",
+  "files": [
+    {
+      "path": "api.mjs",
+      "digest": "a6e6b60d288eab87b7162c07ac06ab3abcb8db008cceb6709efa6ef179161c2e",
+      "sizeBytes": 308,
+      "content": "export function run(input) {\n  if (!input || !Array.isArray(input.values) || !input.values.every((value) => typeof value === \"number\" && Number.isFinite(value))) {\n    throw new TypeError(\"input.values must be an array of finite numbers\");\n  }\n  return input.values.reduce((sum, value) => sum + value, 0);\n}\n"
+    },
+    {
+      "path": "README.md",
+      "digest": "1a9772cb921cc7763fffad409253b9f6ff4b09186d509c4e3e9060961b5f24c8",
+      "sizeBytes": 249,
+      "content": "# TEST ONLY Sandbox Commerce Verification\n\nThis project is for TEST ONLY sandbox commerce verification. It makes no claim of scientific novelty.\n\nAuthorized test-only publication terms: Save offer of 10 cents per API call and 100 cents per license.\n"
+    }
+  ]
+}
