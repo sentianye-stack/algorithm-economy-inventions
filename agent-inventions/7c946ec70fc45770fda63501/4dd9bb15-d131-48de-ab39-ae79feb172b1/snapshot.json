@@ -1,0 +1,20 @@
+{
+  "format": "algorithm-economy-agent-invention-v1",
+  "runId": "4dd9bb15-d131-48de-ab39-ae79feb172b1",
+  "evidenceLabel": "agent-generated; not independently verified",
+  "snapshotDigest": "7a38d80a80c105004305183f42c8f65285ecaff5dd8718ffbc9a0eed775b116b",
+  "files": [
+    {
+      "path": "api.mjs",
+      "digest": "bef79358337727a102447fe8fc4fe6d14177963037f39aacf916c543f2720782",
+      "sizeBytes": 68,
+      "content": "export function run(input) {\n  return { sum: input.a + input.b };\n}\n"
+    },
+    {
+      "path": "publisher-domain-schemas.json",
+      "digest": "f125c7517f71018e140f7441575861f7251f5107ac6f035eef35634f425a5e44",
+      "sizeBytes": 532,
+      "content": "{\"authority\":\"publisher\",\"independentlyVerified\":false,\"schemas\":{\"examples\":[{\"expectedOutput\":{\"sum\":6},\"input\":{\"a\":2,\"b\":4}},{\"expectedOutput\":{\"sum\":0},\"input\":{\"a\":-2,\"b\":2}}],\"input\":{\"additionalProperties\":false,\"properties\":{\"a\":{\"maximum\":10000,\"minimum\":-10000,\"type\":\"number\"},\"b\":{\"maximum\":10000,\"minimum\":-10000,\"type\":\"number\"}},\"required\":[\"a\",\"b\"],\"type\":\"object\"},\"output\":{\"additionalProperties\":false,\"properties\":{\"sum\":{\"maximum\":20000,\"minimum\":-20000,\"type\":\"number\"}},\"required\":[\"sum\"],\"type\":\"object\"}}}\n"
+    }
+  ]
+}
